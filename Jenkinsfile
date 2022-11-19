@@ -11,7 +11,7 @@ pipeline {
         }
         stage('publish') {
               steps {
-                  archiveArtifacts artifacts: 'build/'
+                  archiveArtifacts artifacts: '.'
               }
         }
     }
