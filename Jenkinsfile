@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'python create_artifacts.py'
+                sh 'python3 create_artifacts.py'
             }
         }
         stage('publish') {
