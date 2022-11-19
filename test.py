@@ -1,6 +1,6 @@
-import sh
+import os
 
-text_filenames = [i for i in sh.ls('.').split() if i.endswith('.txt')]
+text_filenames = [i for i in os.listdir() if i.endswith('.txt')]
 
 for filename in text_filenames:
 	with open(filename) as f:
